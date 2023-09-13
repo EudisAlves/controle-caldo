@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(17, 16, 16);
+  align-items: center;
+}
+
+.content {
+  padding: 10px;
+  margin-left: 15px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  margin-right: 19px;
+}
+
+.tab {
+  flex: 1;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-align: center;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    156deg,
+    rgb(204, 219, 224) 0%,
+    rgb(250, 109, 2) 100%
+  );
+  transition: background-color 0.5s;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-right: 1px;
+}
+
+.tab:last-child {
+  margin-right: 0;
+}
+
+.tab:hover {
+  background-color: #f3f1f1;
+  margin: 2px;
+}
+
+.tab.active {
+  border-bottom-color: rgb(255, 2, 2);
+  background-color: rgb(178, 176, 176);
+  border: 2px solid #1dfa00;
+}
+
+.tab-contents {
+  background-color: rgb(186, 185, 185);
+  border: 2px solid #0b0b0b;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  padding: 5px;
+  position: relative;
+  top: -1px;
+  z-index: 0;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+input {
+  margin: 4px;
+  width: 75px;
+}
+
+h1 {
+  color: #ccc;
+  text-align: center;
+}
+
+.btn {
+  margin-left: 35px;
+  margin-top: 15px;
+}
+
+#calcular-total {
+  cursor: pointer;
+}
+
+#limpar-inputs {
+  cursor: pointer;
+}
+
+.share-button {
+  cursor: pointer;
+}
+
+#total-peso {
+  color: #ccc;
+}
+.btn button {
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid #fc6501;
+  background-color: #7eeb70;
+  font-weight: bolder;
+}

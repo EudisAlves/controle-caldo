@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle Caldo</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <div class="content">
+    <h1>Controle caldos</h1>
+    <nav class="tabs">
+      <section id="costela" class="tab active" data-tab="1">Costela</section>
+      <section id="carne-assada" class="tab" data-tab="2">Carne Assada</section>
+      <section id="sobre-coxa" class="tab" data-tab="3">Sobre coxa</section>
+      <section id="strogonoff" class="tab" data-tab="4">Strogonoff</section>
+      <section id="ervilha" class="tab" data-tab="5">Ervilha</section>
+      <section id="caldo-verde" class="tab" data-tab="6">Caldo Verde</section>
+      <section id="dobradinha" class="tab" data-tab="7">Dobradinha</section>
+      <section id="mocotó" class="tab" data-tab="8">Mocotó</section>
+      <section id="caldo-abobora" class="tab" data-tab="9">Caldo Abóbora</section>
+      <section id="feiloada" class="tab" data-tab="10">Feijoada</section>
+      <section id="farofa" class="tab" data-tab="11">Farofa</section>
+    </nav>
+    <div class="tab-contents  active">
+      <div class="tab-content" data-tab="1">
+        <ul id="ingredientes-lista" class="costela">
+          <li>
+            <span>Costela bruta:.</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Costela_bruta">
+            kg
+          </li>
+          <li>
+            <span>Pelanca:.........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Pelanca">
+            kg
+          </li>
+          <li>
+            <span>Costela limpa:</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Costela_limpa">
+            kg
+          </li>
+          <li>
+            <span>Agrião:............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Agrião">
+            maços
+          </li>
+          <li>
+            <span>Batata:............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Batata">
+            kg
+          </li>
+          <li>
+            <span>Cebola:...........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Cebola">
+            kg
+          </li>
+          <li>
+            <span>Pimentão:.......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Pimentão">
+            kg
+          </li>
+          <li>
+            <span>Alho: ..............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Alho">
+            kg
+          </li>
+          <li>
+            <span>Pó carne: .......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Pó carne">
+            kg
+          </li>
+          <li>
+            <span>Colorau: .........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Colorau">
+            kg
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content" data-tab="2">
+        <ul id="ingredientes-lista" class="carne">
+          <li>
+            <span>carne: ........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Carne">
+            kg
+          </li>
+          <li>
+            <span>Gordura: ....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Gordura">
+            kg
+          </li>
+          <li>
+            <span>Batata: .......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Batata">
+            kg
+          </li>
+          <li>
+            <span>Bacon: .......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Bacon">
+            kg
+          </li>
+          <li>
+            <span>Calabresa: .</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Calabresa">
+            kg
+          </li>
+          <li>
+            <span>Alho: ..........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Alho">
+            kg
+          </li>
+          <li>
+            <span>Cebola: ......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Cebola">
+            kg
+          </li>
+          <li>
+            <span>Pimentão: ..</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Pimentão">
+            kg
+          </li>
+          <li>
+            <span>Pó carne: ...</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente"Pó carne">
+            kg
+          </li>
+          <li>
+            <span>Colorau: .....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Colorau">
+            kg
+          </li>
+
+        </ul>
+      </div>
+      <div class="tab-content" data-tab="3">
+        <ul id="ingredientes-lista" class="coxa">
+          <li>
+            <span>Coxa: ........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Coxa">
+            kg
+          </li>
+          <li>
+            <span>Batata: .......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Batata">
+            kg
+          </li>
+          <li>
+            <span>Pimentão: ..</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Pimentão">
+            kg
+          </li>
+          <li>
+            <span>Cebola: ......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Cebola">
+            kg
+          </li>
+          <li>
+            <span>Pó frango: ..</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente"Pó carne">
+            kg
+          </li>
+          <li>
+            <span>Colorau: .....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Colorau">
+            kg
+          </li>
+          <li>
+            <span>Alho: ..........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Alho">
+            kg
+          </li>
+          <li>
+            <span>Óleo: ..........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Óleo">
+            kg
+          </li>
+          <li>
+            <span>Azeite: .......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Azeite">
+            kg
+          </li>
+
+        </ul>
+      </div>
+      <div class="tab-content" data-tab="4">
+        <ul id="ingredientes-lista" class="frango">
+          <li>
+            <span>Frango: .........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Frango">
+            kg
+          </li>
+          <li>
+            <span>Creme Leite: .</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Batata">
+            ml/L
+          </li>
+          <li>
+            <span>Alho: .............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Alho">
+            g
+          </li>
+          <li>
+            <span>Pó frango: ....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente"Pó carne">
+            g
+          </li>
+          <li>
+            <span>Ketchup:........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Ketchup">
+            g
+          </li>
+          <li>
+            <span>Mostarda: .....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Mostarda">
+            g
+          </li>
+          <li>
+            <span>Azeite: ..........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Azeite">
+            g
+          </li>
+          <li>
+            <span>Óleo: ............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Óleo">
+            g
+          </li>
+          <li>
+            <span>Pimentão: ....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Pimentão">
+            g
+          </li>
+          <li>
+            <span>Colorau: .......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Colorau">
+            g
+          </li>
+          <li>
+            <span>Cebola: .........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Cebola">
+            g
+          </li>
+
+        </ul>
+      </div>
+      <div class="tab-content" data-tab="5">
+        <ul id="ingredientes-lista" class="ervilha">
+          <li>
+            <span>Ervilha: .........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Ervilha">
+            g
+          </li>
+          <li>
+            <span>Batata: .........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Batata">
+            kg
+          </li>
+          <li>
+            <span>Alho: ............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Alho">
+            kg
+          </li>
+          <li>
+            <span>Calabresa: ...</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Calabresa">
+            kg
+          </li>
+          <li>
+            <span>Pó frango: ....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente"Pó carne">
+            kg
+          </li>
+          <li>
+            <span>Óleo: ............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Óleo">
+            kg
+          </li>
+          <li>
+            <span>Bacon: .........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Bacon">
+            kg
+          </li>
+
+        </ul>
+      </div>
+      <div class="tab-content" data-tab="6">
+        <ul id="ingredientes-lista" class="verde">
+          <li>
+            <span>Batata: ..........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Batata">
+            kg
+          </li>
+          <li>
+            <span>Colve: ............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Colve">
+            maços
+          </li>
+          <li>
+            <span>Pó frango: ......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente"Pó carne">
+            kg
+          </li>
+          <li>
+            <span>Bacon: ...........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Bacon">
+            g
+          </li>
+          <li>
+            <span>Calabresa: .....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Calabresa">
+            g
+          </li>
+          <li>
+            <span>Cebola: ..........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Cebola">
+            g
+          </li>
+          <li>
+            <span>Pimentão: ......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Pimentão">
+            g
+          </li>
+          <li>
+            <span>Alho: ..............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Alho">
+            g
+          </li>
+          <li>
+            <span>Óleo: ..............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Óleo">
+            ml
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content" data-tab="7">
+        <ul id="ingredientes-lista" class="bucho">
+          <li>
+            <span>Bucho: .........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Bucho">
+            kg
+          </li>
+          <li>
+            <span>Batata: .........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Batata">
+            kg
+          </li>
+          <li>
+            <span>Cenoura:.......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Cenoura">
+            kg
+          </li>
+          <li>
+            <span>Calabresa: ....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Calabresa">
+            g
+          </li>
+          <li>
+            <span>Bacon: ..........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Bacon">
+            g
+          </li>
+          <li>
+            <span>Alho: .............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Alho">
+            g
+          </li>
+          <li>
+            <span>Cebola: .........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Cebola">
+            g
+          </li>
+          <li>
+            <span>Feijão branco: </span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Feijão">
+            g
+          </li>
+          <li>
+            <span>Pimentão: ....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Pimentão">
+            g
+          </li>
+          <li>
+            <span>Óleo: ............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Óleo">
+            g
+          </li>
+          <li>
+            <span>Pó frango: ....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente"Pó carne">
+            g
+          </li>
+          <li>
+            <span>Colorau: .......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Colorau">
+            g
+          </li>
+          <li>
+            <span>Azeitona: ......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Azeitona">
+            g
+          </li>
+
+        </ul>
+      </div>
+      <div class="tab-content" data-tab="8">
+        <ul id="ingredientes-lista" class="bucho">
+          <li>
+            <span>Mocotó: .........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Mocotó">
+            kg
+          </li>
+          <li>
+            <span>Batata: .........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Batata">
+            kg
+          </li>
+          <li>
+            <span>Cenoura:.......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Cenoura">
+            kg
+          </li>
+          <li>
+            <span>Pó frango: ....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente"Pó carne">
+            g
+          </li>
+          <li>
+            <span>Colorau: .......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Colorau">
+            g
+          </li>
+          <li>
+            <span>Pimentão: ....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Pimentão">
+            g
+          </li>
+          <li>
+            <span>Cebola: .........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Cebola">
+            g
+          </li>
+          <li>
+            <span>Azeite: .........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Azeite">
+            g
+          </li>
+          <li>
+            <span>Alho: .............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Alho">
+            g
+          </li>
+          <li>
+            <span>Óleo: ............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Óleo">
+            g
+          </li>
+          <li>
+            <span>Feijão branco: </span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Feijão">
+            g
+          </li>
+          <li>
+            <span>Calabresa: ....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Calabresa">
+            g
+          </li>
+          <li>
+            <span>Bacon: ..........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Bacon">
+            g
+          </li>
+          <li>
+            <span>Azeitona: ......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Azeitona">
+            g
+          </li>
+
+        </ul>
+      </div>
+      <div class="tab-content" data-tab="9">
+        <ul id="ingredientes-lista" class="abobora">
+
+          <li>
+            <span>Calabresa:.....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Calabresa">
+            g
+          </li>
+          <li>
+            <span>Carne seca: .</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Carne">
+            g
+          </li>
+          <li>
+            <span>Abóbora: ......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Abóbora">
+            kg
+          </li>
+          <li>
+            <span>Pó frango: ....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente"Pó carne">
+            g
+          </li>
+          <li>
+            <span>Pimentão: ....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Pimentão">
+            g
+          </li>
+          <li>
+            <span>Cebola: .........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Cebola">
+            g
+          </li>
+          <li>
+            <span>Alho: .............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Alho">
+            g
+          </li>
+          <li>
+            <span>Óleo: ............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Óleo">
+            g
+          </li>
+          <li>
+            <span>Colorau: .......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Colorau">
+            g
+          </li>
+
+        </ul>
+      </div>
+      <div class="tab-content" data-tab="10">
+        <ul id="ingredientes-lista" class="abobora">
+
+          <li>
+            <span>Feijão preto:..</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Feijão">
+            kg
+          </li>
+          <li>
+            <span>Feijuadinha: .</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Feijuadinha">
+            kg
+          </li>
+          <li>
+            <span>Alho: .............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Alho">
+            g
+          </li>
+          <li>
+            <span>Óleo: ............</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Óleo">
+            g
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content" data-tab="11">
+        <ul id="ingredientes-lista" class="farofa">
+          <li>
+            <span>Farinha:......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Farinha">
+            kg
+          </li>
+          <li>
+            <span>Bacon:........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Bacon">
+            g
+          </li>
+          <li>
+            <span>Calabresa:..</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Calabresa">
+            g
+          </li>
+          <li>
+            <span>Alho: ..........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Feijuadinha">
+            g
+          </li>
+          <li>
+            <span>Óleo: .........</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Óleo">
+            g
+          </li>
+          <li>
+            <span>Azeite: .......</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Azeite">
+            g
+          </li>
+          <li>
+            <span>Orégano:....</span>
+            <input type="number" step="0.01" min="0" value="0" class="peso" data-ingrediente="Orégano">
+            g
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="btn">
+    <button id="calcular-total">Calcular Total</button>
+    <button id="limpar-inputs">Limpar Inputs</button>
+    <p id="total-peso">Total Peso: 0.00 kg</p>
+    <button class="share-button">Compartilhar</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
