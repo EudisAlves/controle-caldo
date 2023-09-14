@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ingredientes.forEach((item) => {
             const ingrediente = item.querySelector('input').getAttribute('data-ingrediente');
             const peso = item.querySelector('input').value;
-            detalhesIngredientes.push(`${ingrediente}: ${peso}`);
+            detalhesIngredientes.push(`${ingrediente}: ${peso} kg`);
         });
 
         // Cria o texto a ser compartilhado
