@@ -62,9 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
         updateTotalPeso();
     }
 
-    shareButton.addEventListener("onclick", compartilhar);
-
-
     // Função para compartilhar os detalhes da lista de ingredientes
     function compartilhar() {
         // Obtém a lista de ingredientes ativa
@@ -89,14 +86,26 @@ document.addEventListener("DOMContentLoaded", function () {
         // Cria o texto a ser compartilhado
         const textoCompartilhado = `${listaTitulo}\n${detalhesIngredientes.join('\n')}`;
 
-        // Exibe o texto compartilhado em um alerta (substitua isso pela lógica real de compartilhamento)
-        alert('Detalhes da Lista de Ingredientes:\n\n' + textoCompartilhado);
+        // Verifica se o navegador suporta a Web Share API
+        if (navigator.share) {
+            navigator
+                .share({
+                    title: listaTitulo,
+                    text: textoCompartilhado,
+                })
+                .then(() => {
+                    console.log('Conteúdo compartilhado com sucesso');
+                })
+                .catch((error) => {
+                    console.error('Erro ao compartilhar conteúdo:', error);
+                });
+        } else {
+            // Caso o navegador não suporte a Web Share API, você pode fornecer um feedback ao usuário
+            alert('Seu navegador não suporta a funcionalidade de compartilhamento nativo.');
+        }
     }
 
-    // Associe a função de compartilhamento ao botão "Compartilhar"
-    const botaoCompartilhar = document.querySelector('.share-button');
-    botaoCompartilhar.addEventListener('click', compartilhar);
+    // Resto do código (mantenha o código existente aqui)
 
-
-
+    // ...
 });
